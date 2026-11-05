@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Glow -->
+    <radialGradient id="citrusGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3d6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fdfbf7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Floor Cleaner Bottle Gradient (Golden Citrus / Pine Green) -->
+    <linearGradient id="floorBottle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="20%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="80%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <!-- Handle Gradient -->
+    <linearGradient id="handleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Cap Green Gradient -->
+    <linearGradient id="capGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#043820"/>
+      <stop offset="50%" stop-color="#0c6b41"/>
+      <stop offset="100%" stop-color="#032d19"/>
+    </linearGradient>
+
+    <!-- Label Gradient -->
+    <linearGradient id="labelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#fffbeb"/>
+    </linearGradient>
+
+    <filter id="floorShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#854d0e" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="170" fill="url(#citrusGlow)"/>
+
+  <!-- Floor contact shadow -->
+  <ellipse cx="200" cy="365" rx="100" ry="14" fill="#583101" opacity="0.22"/>
+
+  <!-- Main Bottle Group with Shadow -->
+  <g filter="url(#floorShadow)">
+    
+    <!-- Measuring Cap -->
+    <rect x="180" y="45" width="40" height="30" rx="6" fill="url(#capGreen)"/>
+    <!-- Cap Ridges -->
+    <line x1="188" y1="48" x2="188" y2="72" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+    <line x1="196" y1="48" x2="196" y2="72" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+    <line x1="204" y1="48" x2="204" y2="72" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+    <line x1="212" y1="48" x2="212" y2="72" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+
+    <!-- Neck -->
+    <rect x="186" y="75" width="28" height="20" fill="url(#floorBottle)"/>
+
+    <!-- Bottle Body with Integrated Handle -->
+    <!-- Handle Outer Path -->
+    <path d="M 186 95 C 150 100, 120 135, 120 180 L 120 320 C 120 348, 140 355, 200 355 C 260 355, 280 348, 280 320 L 280 180 C 280 135, 250 100, 214 95 Z" fill="url(#floorBottle)"/>
+
+    <!-- Handle Hole (Cutout) on Right -->
+    <path d="M 235 150 C 255 165, 255 220, 235 235 C 220 220, 220 165, 235 150 Z" fill="#fffbeb" opacity="0.95"/>
+    <path d="M 235 150 C 255 165, 255 220, 235 235 C 220 220, 220 165, 235 150 Z" fill="url(#citrusGlow)"/>
+
+    <!-- Glossy Highlight curve -->
+    <path d="M 135 150 C 130 180, 130 290, 135 335" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.45" fill="none"/>
+
+    <!-- Front Label -->
+    <rect x="142" y="155" width="100" height="155" rx="14" fill="url(#labelGrad)" stroke="#095835" stroke-width="2"/>
+
+    <!-- Top Label Green Header -->
+    <path d="M 142 165 C 142 158, 148 155, 155 155 L 229 155 C 236 155, 242 158, 242 165 L 242 195 L 142 195 Z" fill="#095835"/>
+    <text x="192" y="177" font-family="Outfit, sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle" letter-spacing="1">ORSOLUM</text>
+    <text x="192" y="188" font-family="sans-serif" font-weight="700" font-size="7" fill="#f5b027" text-anchor="middle" letter-spacing="1.5">HERBAL SHUDDHTA</text>
+
+    <!-- Product Title -->
+    <text x="192" y="212" font-family="Outfit, sans-serif" font-weight="900" font-size="10.5" fill="#03331b" text-anchor="middle">CITRUS &amp; NEEM</text>
+    <text x="192" y="223" font-family="sans-serif" font-weight="800" font-size="8.5" fill="#d97706" text-anchor="middle">HERBAL FLOOR CLEANER</text>
+
+    <!-- Lemon / Pine Slice Graphic -->
+    <circle cx="192" cy="245" r="14" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <circle cx="192" cy="245" r="11" fill="#fef08a"/>
+    <line x1="192" y1="234" x2="192" y2="256" stroke="#d97706" stroke-width="1.5"/>
+    <line x1="181" y1="245" x2="203" y2="245" stroke="#d97706" stroke-width="1.5"/>
+    <line x1="184" y1="237" x2="200" y2="253" stroke="#d97706" stroke-width="1.2"/>
+    <line x1="184" y1="253" x2="200" y2="237" stroke="#d97706" stroke-width="1.2"/>
+
+    <!-- Key Bullet Points on Label -->
+    <text x="192" y="272" font-family="sans-serif" font-weight="700" font-size="7" fill="#0c6b41" text-anchor="middle">🌿 10x Max Disinfection</text>
+    <text x="192" y="282" font-family="sans-serif" font-weight="700" font-size="7" fill="#b45309" text-anchor="middle">Repels Flies &amp; Mosquitoes</text>
+    <text x="192" y="292" font-family="sans-serif" font-weight="600" font-size="6.5" fill="#555" text-anchor="middle">Safe for Baby &amp; Pet Homes</text>
+
+    <!-- Volume badge -->
+    <rect x="165" y="297" width="54" height="8" rx="4" fill="#095835"/>
+    <text x="192" y="303.5" font-family="sans-serif" font-weight="900" font-size="6" fill="#fef08a" text-anchor="middle">NATURAL CITRONELLA</text>
+
+    <!-- Sparkling effects around bottle -->
+    <path d="M 105 180 L 108 190 L 118 193 L 108 196 L 105 206 L 102 196 L 92 193 L 102 190 Z" fill="#f59e0b"/>
+    <path d="M 295 190 L 297 197 L 304 199 L 297 201 L 295 208 L 293 201 L 286 199 L 293 197 Z" fill="#10b981"/>
+  </g>
+</svg>
+

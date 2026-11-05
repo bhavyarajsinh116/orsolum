@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background glow -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e6f7ef" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fdfbf7" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Bottle Body Gradient -->
+    <linearGradient id="bottleBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#043820"/>
+      <stop offset="25%" stop-color="#0a633c"/>
+      <stop offset="60%" stop-color="#148f57"/>
+      <stop offset="85%" stop-color="#0a633c"/>
+      <stop offset="100%" stop-color="#043820"/>
+    </linearGradient>
+
+    <!-- Liquid / Accent Gradient -->
+    <linearGradient id="accentTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c9a7"/>
+      <stop offset="100%" stop-color="#028169"/>
+    </linearGradient>
+
+    <!-- Cap Gradient -->
+    <linearGradient id="capRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c5221f"/>
+      <stop offset="40%" stop-color="#ea4335"/>
+      <stop offset="80%" stop-color="#c5221f"/>
+      <stop offset="100%" stop-color="#931311"/>
+    </linearGradient>
+
+    <!-- Label Gradient -->
+    <linearGradient id="labelBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5fcf8"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#032d19" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Circular subtle backdrop -->
+  <circle cx="200" cy="200" r="170" fill="url(#bgGlow)"/>
+
+  <!-- Base ground shadow -->
+  <ellipse cx="200" cy="365" rx="90" ry="14" fill="#032d19" opacity="0.2"/>
+
+  <!-- Bottle Group with shadow -->
+  <g filter="url(#shadow)">
+    
+    <!-- Angled Neck (Duck neck style washroom cleaner) -->
+    <!-- Cap nozzle -->
+    <path d="M 145 55 L 175 42 Q 185 38 190 48 L 180 75 Q 175 82 165 80 Z" fill="url(#capRed)"/>
+    <ellipse cx="150" cy="53" rx="8" ry="6" fill="#fff" opacity="0.6"/>
+
+    <!-- Neck Curve -->
+    <path d="M 165 75 C 160 95, 175 115, 185 125 L 215 125 C 220 110, 215 90, 185 70 Z" fill="url(#bottleBody)"/>
+    
+    <!-- Main Bottle Body -->
+    <!-- Tapered ergonomic grip ribs -->
+    <path d="M 165 125 C 150 140, 135 170, 135 220 L 135 320 C 135 345, 150 355, 200 355 C 250 355, 265 345, 265 320 L 265 220 C 265 170, 250 140, 235 125 Z" fill="url(#bottleBody)"/>
+    
+    <!-- Grip indentations left side -->
+    <path d="M 135 170 Q 148 180 135 190 Q 148 200 135 210 Q 148 220 135 230" stroke="#043820" stroke-width="4" fill="none"/>
+
+    <!-- Highlight strip along bottle -->
+    <path d="M 155 140 C 148 170, 148 280, 150 340" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.35" fill="none"/>
+
+    <!-- Label Shield -->
+    <rect x="150" y="175" width="100" height="140" rx="14" fill="url(#labelBg)" stroke="#095835" stroke-width="2"/>
+    
+    <!-- Top Label Header -->
+    <path d="M 150 185 C 150 177, 157 175, 164 175 L 236 175 C 243 175, 250 177, 250 185 L 250 215 L 150 215 Z" fill="#095835"/>
+    
+    <!-- Brand Name on Label -->
+    <text x="200" y="196" font-family="Outfit, sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle" letter-spacing="1">ORSOLUM</text>
+    <text x="200" y="208" font-family="sans-serif" font-weight="700" font-size="7.5" fill="#f5b027" text-anchor="middle" letter-spacing="1.5">ORGANIC SOIL</text>
+
+    <!-- Product Name Badge -->
+    <rect x="158" y="222" width="84" height="20" rx="4" fill="#e6f7ef"/>
+    <text x="200" y="235" font-family="Outfit, sans-serif" font-weight="800" font-size="9" fill="#043820" text-anchor="middle">WASHROOM</text>
+    <text x="200" y="244" font-family="sans-serif" font-weight="800" font-size="7.5" fill="#c5221f" text-anchor="middle">POWER CLEANER</text>
+
+    <!-- Purity / Sparkle Icon in Label -->
+    <circle cx="200" cy="265" r="14" fill="#00c9a7" opacity="0.2"/>
+    <path d="M 200 255 L 202 263 L 210 265 L 202 267 L 200 275 L 198 267 L 190 265 L 198 263 Z" fill="#0a633c"/>
+    <circle cx="200" cy="265" r="3" fill="#ffffff"/>
+
+    <!-- Key Benefit Tags -->
+    <text x="200" y="290" font-family="sans-serif" font-weight="700" font-size="7.5" fill="#148f57" text-anchor="middle">🌿 100% ACID FREE</text>
+    <text x="200" y="301" font-family="sans-serif" font-weight="600" font-size="7" fill="#444444" text-anchor="middle">Kills 99.9% Germs</text>
+
+    <!-- Size tag on label -->
+    <rect x="175" y="305" width="50" height="7" rx="3" fill="#f5b027"/>
+    <text x="200" y="311" font-family="sans-serif" font-weight="900" font-size="6" fill="#03331b" text-anchor="middle">PLANT EXTRACTS</text>
+
+    <!-- Floating Clean Bubbles -->
+    <circle cx="270" cy="180" r="10" fill="#00c9a7" opacity="0.5"/>
+    <circle cx="268" cy="178" r="3" fill="#ffffff" opacity="0.8"/>
+    <circle cx="282" cy="155" r="6" fill="#00c9a7" opacity="0.4"/>
+    <circle cx="125" cy="240" r="8" fill="#00c9a7" opacity="0.4"/>
+  </g>
+</svg>
+

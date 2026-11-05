@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Glow -->
+    <radialGradient id="waterGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e0f2fe" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fdfbf7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Canvas Bag Fabric Texture Gradient (Forest Green / Khaki Olive) -->
+    <linearGradient id="canvasFabric" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#032d19"/>
+      <stop offset="15%" stop-color="#095835"/>
+      <stop offset="50%" stop-color="#147a4c"/>
+      <stop offset="85%" stop-color="#095835"/>
+      <stop offset="100%" stop-color="#032d19"/>
+    </linearGradient>
+
+    <!-- Heavy-Duty Webbing Strap Gradient -->
+    <linearGradient id="strapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+
+    <!-- Brass / Chrome Tap Gradient -->
+    <linearGradient id="brassTap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <filter id="bagShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#032d19" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Circular background backdrop -->
+  <circle cx="200" cy="200" r="170" fill="url(#waterGlow)"/>
+
+  <!-- Base Ground Shadow -->
+  <ellipse cx="200" cy="365" rx="100" ry="14" fill="#032d19" opacity="0.25"/>
+
+  <!-- Main Bag Group -->
+  <g filter="url(#bagShadow)">
+    
+    <!-- Top Hanging Loop / Heavy Strap Arch -->
+    <path d="M 160 110 C 160 30, 240 30, 240 110" stroke="url(#strapGrad)" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <path d="M 160 110 C 160 30, 240 30, 240 110" stroke="#fef3c7" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+
+    <!-- Reinforced Metal Eyelets at Top -->
+    <circle cx="160" cy="115" r="9" fill="#f59e0b" stroke="#78350f" stroke-width="2"/>
+    <circle cx="160" cy="115" r="4" fill="#032d19"/>
+
+    <circle cx="240" cy="115" r="9" fill="#f59e0b" stroke="#78350f" stroke-width="2"/>
+    <circle cx="240" cy="115" r="4" fill="#032d19"/>
+
+    <!-- Main Canvas Waterbag Body (Pillow / Barrel shape) -->
+    <path d="M 150 110 C 130 115, 120 140, 115 190 C 110 250, 115 315, 140 345 C 160 355, 240 355, 260 345 C 285 315, 290 250, 285 190 C 280 140, 270 115, 250 110 Z" fill="url(#canvasFabric)"/>
+
+    <!-- Fabric Stitching along seams -->
+    <path d="M 125 190 C 122 250, 126 310, 145 338" stroke="#f5b027" stroke-width="2" stroke-dasharray="4 3" fill="none" opacity="0.7"/>
+    <path d="M 275 190 C 278 250, 274 310, 255 338" stroke="#f5b027" stroke-width="2" stroke-dasharray="4 3" fill="none" opacity="0.7"/>
+
+    <!-- Fabric Highlight curve -->
+    <path d="M 155 130 C 145 180, 145 280, 155 330" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.3" fill="none"/>
+
+    <!-- Front Badge / Screen Printed Brand Logo -->
+    <rect x="145" y="150" width="110" height="110" rx="16" fill="#ffffff" stroke="#f5b027" stroke-width="2.5"/>
+    
+    <!-- Green Header inside badge -->
+    <path d="M 145 162 C 145 155, 151 150, 158 150 L 242 150 C 249 150, 255 155, 255 162 L 255 185 L 145 185 Z" fill="#095835"/>
+    <text x="200" y="171" font-family="Outfit, sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle" letter-spacing="1">ORSOLUM</text>
+    <text x="200" y="181" font-family="sans-serif" font-weight="800" font-size="7" fill="#f5b027" text-anchor="middle" letter-spacing="1.5">ORGANIC SOIL</text>
+
+    <!-- Waterdrop / Cool graphic -->
+    <circle cx="200" cy="205" r="14" fill="#e0f2fe"/>
+    <path d="M 200 195 C 208 205, 210 214, 200 217 C 190 214, 192 205, 200 195 Z" fill="#0284c7"/>
+    <circle cx="197" cy="206" r="2.5" fill="#ffffff" opacity="0.8"/>
+
+    <!-- 15L Capacity Highlight -->
+    <text x="200" y="232" font-family="Outfit, sans-serif" font-weight="900" font-size="12" fill="#03331b" text-anchor="middle">15 LITER</text>
+    <text x="200" y="242" font-family="sans-serif" font-weight="800" font-size="7" fill="#b45309" text-anchor="middle">INSULATED WATERBAG</text>
+    <text x="200" y="252" font-family="sans-serif" font-weight="700" font-size="6.5" fill="#0284c7" text-anchor="middle">❄️ Keeps Water Chilled</text>
+
+    <!-- Bottom Tap Assembly (Dispensing Valve) -->
+    <rect x="188" y="325" width="24" height="20" rx="3" fill="url(#brassTap)" stroke="#582900" stroke-width="1.5"/>
+    <!-- Tap Spout -->
+    <path d="M 194 345 L 194 362 L 206 362 L 206 345 Z" fill="url(#brassTap)"/>
+    <!-- Tap Rotary Valve Handle -->
+    <rect x="180" y="328" width="40" height="6" rx="3" fill="#dc2626"/>
+    <circle cx="200" cy="331" r="3" fill="#ffffff"/>
+
+    <!-- Water Drop coming from Tap -->
+    <path d="M 200 370 C 204 374, 204 380, 200 382 C 196 380, 196 374, 200 370 Z" fill="#38bdf8"/>
+
+    <!-- Ice crystal / snowflake icons floating -->
+    <path d="M 105 155 L 115 155 M 110 150 L 110 160 M 106 151 L 114 159 M 106 159 L 114 151" stroke="#0284c7" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 290 145 L 300 145 M 295 140 L 295 150 M 291 141 L 299 149 M 291 149 L 299 141" stroke="#0284c7" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
+

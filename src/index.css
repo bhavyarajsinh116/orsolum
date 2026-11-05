@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1f2937;
+    background-color: #fbfaf6;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .font-serif-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+::-webkit-scrollbar-thumb {
+  background: #095835;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #064026;
+}
+
+/* Pattern backgrounds */
+.bg-mandala-pattern {
+  background-color: #03331b;
+  background-image: radial-gradient(rgba(245, 176, 39, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-organic-cream {
+  background-color: #fcfbf7;
+  background-image: radial-gradient(rgba(9, 88, 53, 0.04) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Arch border shape */
+.arch-card {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* Subtle gold glow */
+.gold-glow {
+  box-shadow: 0 0 25px rgba(245, 176, 39, 0.25);
+}
+
+.green-glow {
+  box-shadow: 0 10px 30px rgba(9, 88, 53, 0.2);
+}
+
